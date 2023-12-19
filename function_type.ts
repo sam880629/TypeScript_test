@@ -42,3 +42,10 @@ let tomcat = buildName('Tom', 'Cat');
 let tom = buildName('Tom');
 
 
+// -型別斷言（Type Assertion）可以用來手動指定一個值的型別 ， <型別>值 或 值 as 型別
+
+function get_sonmething(something: string | number): number {
+    return something as number ;
+}
+
+console.log(get_sonmething(100))
